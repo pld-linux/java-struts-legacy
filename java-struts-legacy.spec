@@ -8,8 +8,7 @@ Source0:	http://www.apache.org/dist/jakarta/struts/struts-legacy/struts-legacy-%
 # Source0-md5:	805b7f3e787c1469f57fed9f5eebc3a1
 Group:		Development/Languages/Java
 URL:		http://jakarta.apache.org/struts/
-BuildRequires:	jakarta-ant >= 1.5
-BuildRequires:	jaxp_transform_impl
+BuildRequires:	jakarta-ant >= 1.6
 BuildRequires:	servlet
 BuildRequires:	jdbc-stdext >= 2.0-2
 BuildRequires:	jakarta-commons-beanutils
@@ -20,8 +19,6 @@ Requires:	jakarta-commons-beanutils
 Requires:	jakarta-commons-collections
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_javalibdir	%{_datadir}/java
 
 %description
 The struts-legacy distribution contains classes which have been
@@ -46,9 +43,9 @@ ant -Dcommons-logging.jar=/usr/share/java/commons-logging.jar \
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_javalibdir}
+install -d $RPM_BUILD_ROOT%{_javadir}
 
-cp dist/*.jar $RPM_BUILD_ROOT%{_javalibdir}
+cp dist/*.jar $RPM_BUILD_ROOT%{_javadir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -56,4 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc dist/docs/api dist/LICENSE.txt
-%{_javalibdir}/*.jar
+%{_javadir}/*.jar
