@@ -36,9 +36,9 @@ uznane za "stabilne", ale *nie* s± aktywnie utrzymywane (st±d nazwa
 %setup -q -n struts-legacy-%{version}-src
 
 %build
-ant -Dcommons-logging.jar=/usr/share/java/commons-logging.jar \
+ant -Dcommons-logging.jar=%{_datadir}/java/commons-logging.jar \
     -Djdk.version=1.4 \
-    -Djdbc20ext.jar=/usr/share/java/jdbc-stdext.jar \
+    -Djdbc20ext.jar=%{_datadir}/java/jdbc-stdext.jar \
     dist
 
 %install
