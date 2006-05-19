@@ -8,7 +8,7 @@ Source0:	http://www.apache.org/dist/jakarta/struts/struts-legacy/struts-legacy-%
 # Source0-md5:	805b7f3e787c1469f57fed9f5eebc3a1
 Group:		Development/Languages/Java
 URL:		http://struts.apache.org/
-BuildRequires:	jakarta-ant >= 1.6
+BuildRequires:	ant >= 1.6
 BuildRequires:	jakarta-commons-beanutils
 BuildRequires:	jakarta-commons-collections
 BuildRequires:	jdbc-stdext >= 2.0-2
