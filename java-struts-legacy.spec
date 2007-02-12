@@ -1,5 +1,5 @@
 Summary:	struts-legacy - classes removed from the core Struts distribution
-Summary(pl):	struts-legacy - klasy usuniête z g³ównej dystrybucji Struts
+Summary(pl.UTF-8):   struts-legacy - klasy usuniÄ™te z gÅ‚Ã³wnej dystrybucji Struts
 Name:		jakarta-struts-legacy
 Version:	1.0
 Release:	0.1
@@ -26,10 +26,10 @@ removed from the core Struts distribution but may still be of
 interest. These classes are considered "stable" but are *not* actively
 maintained (hence, the name "legacy").
 
-%description -l pl
-Pakiet struts-legacy zawiera klasy, które zosta³y usuniête z g³ównej
-dystrybucji Struts, ale mog± nadal byæ interesuj±ce. Klasy te s±
-uznane za "stabilne", ale *nie* s± aktywnie utrzymywane (st±d nazwa
+%description -l pl.UTF-8
+Pakiet struts-legacy zawiera klasy, ktÃ³re zostaÅ‚y usuniÄ™te z gÅ‚Ã³wnej
+dystrybucji Struts, ale mogÄ… nadal byÄ‡ interesujÄ…ce. Klasy te sÄ…
+uznane za "stabilne", ale *nie* sÄ… aktywnie utrzymywane (stÄ…d nazwa
 "legacy").
 
 %prep
