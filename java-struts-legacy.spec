@@ -1,5 +1,5 @@
 Summary:	struts-legacy - classes removed from the core Struts distribution
-Summary(pl.UTF-8):   struts-legacy - klasy usunięte z głównej dystrybucji Struts
+Summary(pl.UTF-8):	struts-legacy - klasy usunięte z głównej dystrybucji Struts
 Name:		jakarta-struts-legacy
 Version:	1.0
 Release:	0.1
