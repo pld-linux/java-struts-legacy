@@ -44,7 +44,7 @@ Requires:	jpackage-utils
 Documentation for %{name}.
 
 %description javadoc -l pl.UTF-8
-Dokumentacja do %{name}a -
+Dokumentacja do %{name}.
 
 %prep
 %setup -q -n struts-legacy-%{version}-src
