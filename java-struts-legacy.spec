@@ -1,14 +1,7 @@
 %bcond_without  javadoc         # don't build javadoc
-%if "%{pld_release}" == "ti"
-%bcond_without  java_sun        # build with gcj
-%else
-%bcond_with     java_sun        # build with java-sun
-%endif
 
 %include        /usr/lib/rpm/macros.java
-
 %define         srcname         struts-legacy
-
 Summary:	struts-legacy - classes removed from the core Struts distribution
 Summary(pl.UTF-8):	struts-legacy - klasy usunięte z głównej dystrybucji Struts
 Name:		java-struts-legacy
@@ -20,19 +13,18 @@ Source0:	http://archive.apache.org/dist/jakarta/struts/struts-legacy/struts-lega
 Group:		Libraries/Java
 URL:		http://struts.apache.org/
 BuildRequires:	ant >= 1.6
+BuildRequires:	java(jdbc-stdext) >= 2.0-2
+BuildRequires:	java(servlet)
 BuildRequires:	java-commons-beanutils
 BuildRequires:	java-commons-collections
-%{!?with_java_sun:BuildRequires:        java-gcj-compat-devel}
-%{?with_java_sun:BuildRequires: java-sun}
-BuildRequires:	jdbc-stdext >= 2.0-2
+BuildRequires:	jdk
 BuildRequires:	jpackage-utils
-BuildRequires:  rpm >= 4.4.9-56
+BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpmbuild(macros) >= 1.300
-BuildRequires:	servlet
+Requires:	java(jdbc-stdext) >= 2.0
+Requires:	java(servlet)
 Requires:	java-commons-beanutils
 Requires:	java-commons-collections
-Requires:	jdbc-stdext >= 2.0
-Requires:	servlet
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
