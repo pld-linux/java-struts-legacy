@@ -1,6 +1,5 @@
 %bcond_without  javadoc         # don't build javadoc
 
-%include        /usr/lib/rpm/macros.java
 %define         srcname         struts-legacy
 Summary:	struts-legacy - classes removed from the core Struts distribution
 Summary(pl.UTF-8):	struts-legacy - klasy usunięte z głównej dystrybucji Struts
